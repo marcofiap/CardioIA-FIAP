@@ -4,13 +4,42 @@
 
 Entre 3 e 4 minutos.
 
+## Objetivo do video
+
+Demonstrar que a entrega atende ao enunciado da Fase 2, combinando:
+
+- uso do dataset da Fase 1;
+- extracao de sintomas em frases textuais;
+- sugestao de diagnostico assistido;
+- classificacao de risco com IA;
+- discussao de vies e governanca em saude.
+
 ## Estrutura sugerida
 
 ### 1. Apresentacao do projeto
 
-"Este projeto foi desenvolvido para a atividade Fase 2 do CardioIA, com foco em diagnostico automatizado usando NLP e classificacao de texto na area cardiologica."
+Mostrar:
 
-### 2. Parte 1 - Extracao de sintomas
+- repositorio no GitHub
+- titulo do projeto no `README.md`
+
+Fala sugerida:
+
+"Este projeto foi desenvolvido para a atividade Fase 2 do CardioIA, com foco em diagnostico automatizado em cardiologia. A solucao combina o dataset clinico da Fase 1 com modulos de NLP e classificacao de texto desenvolvidos nesta fase."
+
+### 2. Integracao com o dataset da Fase 1
+
+Mostrar:
+
+- arquivo `data/heart_disease_uci_fiap(in).csv`
+- script `src/analise_dataset_fase1.py` ou notebook `notebooks/analise_dataset_fase1.ipynb`
+- saida da analise com quantidade de registros, distribuicao do `target` e recorte por sexo ou faixa etaria
+
+Fala sugerida:
+
+"Primeiro, reaproveitamos o dataset da Fase 1 para manter coerencia com o enunciado. Fizemos uma analise exploratoria do arquivo clinico, observando distribuicao dos pacientes, variaveis relevantes e possiveis vies por sexo e faixa etaria."
+
+### 3. Parte 1 - Extracao de sintomas e diagnostico assistido
 
 Mostrar:
 
@@ -22,7 +51,7 @@ Fala sugerida:
 
 "Na Parte 1, criamos 10 frases simulando relatos de pacientes e um mapa de conhecimento em CSV associando sintomas a possiveis diagnosticos. O script le as frases, identifica sintomas por regras simples e sugere um diagnostico assistido."
 
-### 3. Parte 2 - Classificador de risco
+### 4. Parte 2 - Classificador de risco
 
 Mostrar:
 
@@ -32,18 +61,33 @@ Mostrar:
 
 Fala sugerida:
 
-"Na Parte 2, criamos uma base rotulada com frases de alto e baixo risco. Aplicamos TF-IDF para transformar o texto em vetores numericos e treinamos um classificador com Logistic Regression. Depois, avaliamos o desempenho com acuracia e matriz de confusao."
+"Na Parte 2, criamos uma base rotulada com frases de alto e baixo risco. Aplicamos TF-IDF para transformar o texto em vetores numericos e treinamos um classificador com Logistic Regression. Depois, avaliamos o desempenho com acuracia, matriz de confusao e previsoes em frases novas."
 
-### 4. Governanca e vies
+### 5. Governanca e vies
 
-Mostrar o `README.md`.
+Mostrar:
 
-Fala sugerida:
-
-"Tambem discutimos governanca e vies, porque o projeto lida com saude. Os dados sao simulados, a base e pequena e os resultados nao substituem avaliacao medica. O objetivo aqui e academico e demonstrativo."
-
-### 5. Encerramento
+- secao de governanca no `README.md`
+- secao de analise do dataset da Fase 1
 
 Fala sugerida:
 
-"Com isso, entregamos uma solucao funcional de apoio ao diagnostico textual em cardiologia, alinhada ao enunciado da Fase 2."
+"Tambem discutimos governanca e vies, porque o projeto lida com saude. O dataset da Fase 1 ajudou a analisar representatividade e contexto clinico, enquanto os dados textuais desta fase sao simulados e usados apenas para fins academicos."
+
+### 6. Encerramento
+
+Mostrar:
+
+- secao `Checklist do Enunciado` no `README.md`
+
+Fala sugerida:
+
+"Com isso, entregamos uma solucao funcional alinhada ao enunciado da Fase 2, integrando dados estruturados, extracao de sintomas, diagnostico assistido, classificacao de risco e reflexao sobre vies em saude."
+
+## Ordem pratica de gravacao
+
+1. Abrir o `README.md` e apresentar o projeto.
+2. Mostrar o CSV `heart_disease_uci_fiap(in).csv` e a analise da Fase 1.
+3. Mostrar os arquivos da Parte 1 e executar o script de extracao.
+4. Mostrar a base rotulada e executar a classificacao da Parte 2.
+5. Encerrar no `README.md`, destacando criterios de avaliacao e checklist.
