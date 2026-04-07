@@ -68,6 +68,11 @@ Este repositorio foi preparado para concentrar a atividade principal da Fase 2 e
 - `frontend/`: estrutura reservada para o Ir Alem 1
 - `mlp-ecg/`: estrutura reservada para o Ir Alem 2
 
+Documentacoes complementares:
+
+- `frontend/README.md`: orientacoes especificas do Ir Alem 1
+- `mlp-ecg/README.md`: orientacoes especificas do Ir Alem 2
+
 ---
 
 ## Objetivo da Atividade
