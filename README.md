@@ -34,23 +34,25 @@ Nesta etapa, a proposta e simular um modulo inteligente de apoio ao diagnostico 
 
 O trabalho foi desenvolvido com base:
 
+- nas apostilas da FIAP disponiveis em `docs/apostilas_aulas/`;
 - no arquivo `docs/sintomas_e_remomendacoes_cardio`;
 - no arquivo `docs/taxa_sobrevivencia_taxa_reinter`;
-- na continuidade conceitual do dataset e do contexto construidos na Fase 1.
+- no dataset `data/heart_disease_uci_fiap(in).csv`, reaproveitado da Fase 1.
 
-Importante: os diagnosticos sugeridos neste projeto são **simulacões acadêmicas** e não substituem avaliação médica real.
+Importante: os diagnosticos sugeridos neste projeto sao **simulacoes academicas** e nao substituem avaliacao medica real.
 
 ---
 
 ## Objetivo da Atividade
 
-Desenvolver uma solução simples de IA aplicada a saúde cardiovascular, contemplando:
+Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contemplando:
 
+- uso do dataset numerico da Fase 1 como base clinica do projeto;
 - extracao de sintomas em frases clinicas;
-- associação entre sintomas e possíveis doenças;
-- classificação de frases em `alto risco` e `baixo risco`;
+- associacao entre sintomas e possiveis doencas;
+- classificacao de frases em `alto risco` e `baixo risco`;
 - uso de `TF-IDF` e modelo supervisionado com `scikit-learn`;
-- reflexão sobre viés, governança de dados e uso responsável de IA em saúde.
+- reflexao sobre vies, governanca de dados e uso responsavel de IA em saude.
 
 ---
 
@@ -59,26 +61,63 @@ Desenvolver uma solução simples de IA aplicada a saúde cardiovascular, contem
 ```text
 .
 |-- data
+|   |-- heart_disease_uci_fiap(in).csv
 |   |-- frases_rotuladas_risco.csv
 |   |-- frases_sintomas_pacientes.txt
 |   `-- mapa_conhecimento_sintomas_doencas.csv
 |-- docs
+|   |-- apostilas_aulas/
+|   |-- roteiro_video_fase2.md
 |   |-- sintomas_e_remomendacoes_cardio
 |   `-- taxa_sobrevivencia_taxa_reinter
 |-- notebooks
+|   |-- analise_dataset_fase1.ipynb
 |   |-- parte1_extracao_diagnostico.ipynb
 |   `-- parte2_classificador_risco.ipynb
 |-- src
+|   |-- analise_dataset_fase1.py
 |   |-- parte1_extracao_diagnostico.py
 |   `-- parte2_classificador_risco.py
+|-- requirements.txt
 `-- README.md
 ```
 
 ---
 
-## Parte 1 - Extracao de Informações e Diagnóstico Assistido
+## Integracao com o Dataset da Fase 1
 
-### Entregáveis
+### Entregaveis
+
+- `data/heart_disease_uci_fiap(in).csv`
+- `src/analise_dataset_fase1.py`
+- `notebooks/analise_dataset_fase1.ipynb`
+
+### Descricao
+
+Para aderir ao enunciado, a Fase 2 utiliza explicitamente o dataset numerico da Fase 1. Esse CSV foi usado para:
+
+- analisar a distribuicao de pacientes com e sem doenca cardiaca;
+- observar variaveis clinicas relevantes como idade, pressao arterial, colesterol, frequencia cardiaca maxima e `oldpeak`;
+- discutir vies e representatividade por sexo e faixa etaria;
+- reforcar o contexto clinico do modulo textual desenvolvido nesta fase.
+
+### Execucao
+
+```bash
+python src/analise_dataset_fase1.py
+```
+
+Para apresentacao em notebook:
+
+```bash
+python -m notebook notebooks/analise_dataset_fase1.ipynb
+```
+
+---
+
+## Parte 1 - Extracao de Informacoes e Diagnostico Assistido
+
+### Entregaveis
 
 - `data/frases_sintomas_pacientes.txt`
 - `data/mapa_conhecimento_sintomas_doencas.csv`
@@ -113,7 +152,7 @@ python src/parte1_extracao_diagnostico.py
 Para apresentacao em notebook:
 
 ```bash
-jupyter notebook notebooks/parte1_extracao_diagnostico.ipynb
+python -m notebook notebooks/parte1_extracao_diagnostico.ipynb
 ```
 
 ---
@@ -151,7 +190,7 @@ python src/parte2_classificador_risco.py
 Para apresentacao em notebook:
 
 ```bash
-jupyter notebook notebooks/parte2_classificador_risco.ipynb
+python -m notebook notebooks/parte2_classificador_risco.ipynb
 ```
 
 ---
@@ -168,6 +207,22 @@ Os textos `docs/sintomas_e_remomendacoes_cardio` e `docs/taxa_sobrevivencia_taxa
 - mortalidade e readmissao;
 - contexto clinico e epidemiologico.
 
+### Base numerica da Fase 1
+
+O dataset `heart_disease_uci_fiap(in).csv` foi incorporado como base clinica estruturada do projeto. Com isso, a entrega passa a combinar:
+
+- dados clinicos estruturados da Fase 1;
+- dados textuais simulados da Fase 2;
+- discussao de vies e governanca em saude.
+
+### Base conceitual das apostilas
+
+As apostilas da FIAP apoiaram principalmente os topicos de:
+
+- NLP e classificacao de texto;
+- estruturacao de dados para IA;
+- etica, governanca e responsabilidade no uso de modelos.
+
 ---
 
 ## Governanca de Dados e Vies
@@ -180,7 +235,7 @@ Como a atividade envolve saude, alguns cuidados foram considerados:
 - diagnosticos baseados em regras simples, sem validacao clinica;
 - necessidade de revisao humana e interpretacao critica dos resultados.
 
-Os textos-base indicam que fatores como idade avancada e hipertensao estao associados a piores desfechos, o que reforca a importancia de desenvolver sistemas rastreaveis, auditaveis e usados com cautela.
+A analise do dataset da Fase 1 tambem permitiu observar representatividade por sexo e faixa etaria, reforcando a necessidade de desenvolver sistemas rastreaveis, auditaveis e usados com cautela.
 
 ---
 
@@ -194,9 +249,16 @@ Os textos-base indicam que fatores como idade avancada e hipertensao estao assoc
 - `scikit-learn`
 - `jupyter` para executar os notebooks
 
+Instalacao rapida:
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Comandos principais
 
 ```bash
+python src/analise_dataset_fase1.py
 python src/parte1_extracao_diagnostico.py
 python src/parte2_classificador_risco.py
 ```
@@ -204,6 +266,16 @@ python src/parte2_classificador_risco.py
 ---
 
 ## Resultados Obtidos
+
+### Analise do dataset da Fase 1
+
+Na analise local do arquivo `heart_disease_uci_fiap(in).csv`, foram observados:
+
+- `303` registros de pacientes
+- `165` casos com doenca cardiaca (`target = 1`)
+- `138` casos sem doenca cardiaca (`target = 0`)
+
+Esses dados foram usados para contextualizar a Fase 2 e sustentar a discussao sobre fatores clinicos e vies.
 
 ### Parte 1 - Diagnostico assistido por regras
 
@@ -241,14 +313,37 @@ Esses resultados indicam que o modelo consegue diferenciar frases com sinais cli
 
 O enunciado exige um video de ate 4 minutos demonstrando a solucao completa.
 
+Para facilitar a gravacao, foi incluido um roteiro em:
+
+- `docs/roteiro_video_fase2.md`
+
 Inserir aqui o link do video no YouTube como **nao listado**:
 
 - Link: `ADICIONAR_LINK_DO_VIDEO`
 
 ---
 
+## Checklist do Enunciado
+
+Itens atendidos neste repositorio:
+
+- analise do dataset reaproveitado da Fase 1
+- arquivo `.txt` com 10 frases completas de sintomas
+- arquivo `.csv` com mapa de conhecimento entre sintomas e diagnosticos
+- codigo Python para leitura das frases, extracao de sintomas e sugestao de diagnostico
+- arquivo `.csv` com frases e rotulos de risco
+- notebook `.ipynb` para a classificacao com TF-IDF
+- documentacao principal no `README.md`
+
+Itens que dependem da equipe fora deste workspace:
+
+- gravar o video e subir no YouTube como nao listado
+- substituir `ADICIONAR_LINK_DO_VIDEO` pelo link final
+
+---
+
 ## Conclusao
 
-Com este repositorio, a equipe consegue demonstrar uma solucao funcional e didatica para apoio ao diagnostico automatizado em cardiologia, cobrindo desde a extracao basica de sintomas ate a classificacao de risco textual com IA.
+Com este repositorio, a equipe consegue demonstrar uma solucao funcional e didatica para apoio ao diagnostico automatizado em cardiologia, cobrindo a base numerica da Fase 1, a extracao basica de sintomas e a classificacao de risco textual com IA.
 
 Como evolucao futura, o projeto pode incorporar uma base maior de frases, novos modelos de classificacao e integracao com os modulos seguintes do CardioIA.
