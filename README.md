@@ -43,6 +43,23 @@ Importante: os diagnosticos sugeridos neste projeto sao **simulacoes academicas*
 
 ---
 
+## Resumo da Entrega
+
+Esta entrega foi organizada em tres blocos complementares:
+
+- analise do dataset clinico da Fase 1 com foco em distribuicao, fatores de risco e vies;
+- extracao de sintomas e sugestao de diagnostico assistido por regras;
+- classificacao textual de risco com `TF-IDF` e `LogisticRegression`.
+
+Assim, o projeto atende ao enunciado ao combinar:
+
+- dados clinicos estruturados;
+- relatos textuais simulados;
+- classificacao automatizada;
+- reflexao sobre governanca e vies em saude.
+
+---
+
 ## Objetivo da Atividade
 
 Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contemplando:
@@ -332,6 +349,7 @@ Itens atendidos neste repositorio:
 - arquivo `.csv` com mapa de conhecimento entre sintomas e diagnosticos
 - codigo Python para leitura das frases, extracao de sintomas e sugestao de diagnostico
 - arquivo `.csv` com frases e rotulos de risco
+- notebook `.ipynb` para a extracao e diagnostico assistido
 - notebook `.ipynb` para a classificacao com TF-IDF
 - documentacao principal no `README.md`
 
@@ -339,6 +357,17 @@ Itens que dependem da equipe fora deste workspace:
 
 - gravar o video e subir no YouTube como nao listado
 - substituir `ADICIONAR_LINK_DO_VIDEO` pelo link final
+
+---
+
+## Relacao com os Criterios de Avaliacao
+
+- `Relatos e mapa de conhecimento organizados`: atendido com `frases_sintomas_pacientes.txt` e `mapa_conhecimento_sintomas_doencas.csv`
+- `Codigo de extracao de informacoes funcional`: atendido com `parte1_extracao_diagnostico.py` e notebook correspondente
+- `Dataset simples criado corretamente`: atendido com `frases_rotuladas_risco.csv`
+- `Classificador treinado e testado corretamente`: atendido com `parte2_classificador_risco.py` e `parte2_classificador_risco.ipynb`
+- `Documentacao clara e repositorio publico no GitHub com README completo`: atendido neste repositorio
+- `Video de demonstracao no YouTube`: pendente apenas a gravacao e inclusao do link final
 
 ---
 
