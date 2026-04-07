@@ -60,6 +60,16 @@ Assim, o projeto atende ao enunciado ao combinar:
 
 ---
 
+## Organizacao do Repositorio
+
+Este repositorio foi preparado para concentrar a atividade principal da Fase 2 e tambem os dois modulos `Ir Alem` no mesmo projeto.
+
+- `data/`, `src/` e `notebooks/`: atividade principal da Fase 2
+- `frontend/`: estrutura reservada para o Ir Alem 1
+- `mlp-ecg/`: estrutura reservada para o Ir Alem 2
+
+---
+
 ## Objetivo da Atividade
 
 Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contemplando:
@@ -88,6 +98,17 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 |   |-- roteiro_video_fase2.md
 |   |-- sintomas_e_remomendacoes_cardio
 |   `-- taxa_sobrevivencia_taxa_reinter
+|-- frontend
+|   |-- components/
+|   |-- contexts/
+|   |-- pages/
+|   |-- services/
+|   `-- README.md
+|-- mlp-ecg
+|   |-- assets/
+|   |-- data/
+|   |-- notebooks/
+|   `-- README.md
 |-- notebooks
 |   |-- analise_dataset_fase1.ipynb
 |   |-- parte1_extracao_diagnostico.ipynb
@@ -100,6 +121,41 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 |-- requirements.txt
 `-- README.md
 ```
+
+---
+
+## Escopo por Bloco
+
+### Atividade principal
+
+Esta parte ja contempla:
+
+- uso do dataset da Fase 1
+- extracao de sintomas e diagnostico assistido
+- classificacao textual de risco
+- analise de vies e documentacao principal
+
+### Ir Alem 1
+
+Esta parte sera desenvolvida em `frontend/` e devera conter:
+
+- React + Vite
+- Context API
+- autenticacao simulada
+- protecao de rotas
+- listagem de pacientes
+- agendamento de consultas
+- dashboard
+
+### Ir Alem 2
+
+Esta parte sera desenvolvida em `mlp-ecg/` e devera conter:
+
+- notebook de imagens de ECG
+- preprocessamento
+- MLP com Keras
+- treinamento e avaliacao
+- exemplos de imagens
 
 ---
 
