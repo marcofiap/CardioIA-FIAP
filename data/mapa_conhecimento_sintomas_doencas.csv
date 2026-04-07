@@ -1,0 +1,17 @@
+sintoma_1,sintoma_2,doenca_associada
+dor no peito,aperto no peito,Infarto Agudo do Miocardio
+aperto no torax,dor toracica,Infarto Agudo do Miocardio
+dor na mandibula,irradiando para o braco esquerdo,Infarto Agudo do Miocardio
+suor frio,nausea,Infarto Agudo do Miocardio
+falta de ar,dificuldade para respirar,Angina
+desconforto no peito,cansaco ao esforco,Angina
+dor no peito ao esforco,falta de ar ao esforco,Angina
+fadiga constante,inchaco nas pernas,Insuficiencia Cardiaca
+cansaco constante,dificuldade para dormir deitado,Insuficiencia Cardiaca
+dispneia,inchaco,Insuficiencia Cardiaca
+palpitacoes,batimentos irregulares,Arritmia
+coracao acelera,tontura,Arritmia
+desmaio,palpitações fortes,Arritmia
+pressao alta,dor de cabeca,Hipertensao
+tontura frequente,pressao alta,Hipertensao
+mal estar,pressao elevada,Hipertensao
