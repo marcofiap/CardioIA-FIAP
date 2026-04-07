@@ -1,0 +1,8 @@
+indicador_clinico,regra_dataset,expressao_textual,uso_na_fase2
+angina_induzida_exercicio,exang=1,dor no peito ao esforco,alto risco e diagnostico assistido
+angina_induzida_exercicio,exang=1,falta de ar ao esforco,alto risco e diagnostico assistido
+pressao_arterial_elevada,trestbps>=140,pressao alta,diagnostico assistido e contexto clinico
+colesterol_elevado,chol>=240,colesterol elevado,contexto clinico e vies
+frequencia_cardiaca_alterada,thalach fora do padrao,palpitacoes,alto risco e diagnostico assistido
+idade_maior_risco,age>=60,cansaco constante,contexto clinico e analise de vies
+alteracao_isquemica,oldpeak>1,dor no peito em aperto,alto risco e diagnostico assistido

@@ -81,6 +81,7 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 |   |-- heart_disease_uci_fiap(in).csv
 |   |-- frases_rotuladas_risco.csv
 |   |-- frases_sintomas_pacientes.txt
+|   |-- mapeamento_dataset_texto.csv
 |   `-- mapa_conhecimento_sintomas_doencas.csv
 |-- docs
 |   |-- apostilas_aulas/
@@ -93,6 +94,7 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 |   `-- parte2_classificador_risco.ipynb
 |-- src
 |   |-- analise_dataset_fase1.py
+|   |-- integracao_dataset_texto.py
 |   |-- parte1_extracao_diagnostico.py
 |   `-- parte2_classificador_risco.py
 |-- requirements.txt
@@ -106,7 +108,9 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 ### Entregaveis
 
 - `data/heart_disease_uci_fiap(in).csv`
+- `data/mapeamento_dataset_texto.csv`
 - `src/analise_dataset_fase1.py`
+- `src/integracao_dataset_texto.py`
 - `notebooks/analise_dataset_fase1.ipynb`
 
 ### Descricao
@@ -116,12 +120,14 @@ Para aderir ao enunciado, a Fase 2 utiliza explicitamente o dataset numerico da 
 - analisar a distribuicao de pacientes com e sem doenca cardiaca;
 - observar variaveis clinicas relevantes como idade, pressao arterial, colesterol, frequencia cardiaca maxima e `oldpeak`;
 - discutir vies e representatividade por sexo e faixa etaria;
-- reforcar o contexto clinico do modulo textual desenvolvido nesta fase.
+- reforcar o contexto clinico do modulo textual desenvolvido nesta fase;
+- construir um mapeamento explicito entre indicadores clinicos do dataset e expressoes textuais usadas nas frases e na classificacao de risco.
 
 ### Execucao
 
 ```bash
 python src/analise_dataset_fase1.py
+python src/integracao_dataset_texto.py
 ```
 
 Para apresentacao em notebook:
@@ -230,6 +236,7 @@ O dataset `heart_disease_uci_fiap(in).csv` foi incorporado como base clinica est
 
 - dados clinicos estruturados da Fase 1;
 - dados textuais simulados da Fase 2;
+- relacao explicita entre indicadores do dataset e expressoes textuais do modulo NLP;
 - discussao de vies e governanca em saude.
 
 ### Base conceitual das apostilas
@@ -276,6 +283,7 @@ pip install -r requirements.txt
 
 ```bash
 python src/analise_dataset_fase1.py
+python src/integracao_dataset_texto.py
 python src/parte1_extracao_diagnostico.py
 python src/parte2_classificador_risco.py
 ```
@@ -293,6 +301,16 @@ Na analise local do arquivo `heart_disease_uci_fiap(in).csv`, foram observados:
 - `138` casos sem doenca cardiaca (`target = 0`)
 
 Esses dados foram usados para contextualizar a Fase 2 e sustentar a discussao sobre fatores clinicos e vies.
+
+### Ponte entre dataset e modulo textual
+
+Foi criado o arquivo `mapeamento_dataset_texto.csv` para documentar como sinais clinicos do dataset da Fase 1 foram refletidos nas expressoes textuais da Fase 2, como por exemplo:
+
+- `exang = 1` -> `dor no peito ao esforco` e `falta de ar ao esforco`
+- `trestbps >= 140` -> `pressao alta`
+- `oldpeak > 1` -> `dor no peito em aperto`
+
+Isso reforca que a parte textual nao foi criada sem contexto clinico, mas orientada pelos dados estruturados da Fase 1.
 
 ### Parte 1 - Diagnostico assistido por regras
 
@@ -345,6 +363,7 @@ Inserir aqui o link do video no YouTube como **nao listado**:
 Itens atendidos neste repositorio:
 
 - analise do dataset reaproveitado da Fase 1
+- ponte documentada entre o dataset da Fase 1 e a base textual da Fase 2
 - arquivo `.txt` com 10 frases completas de sintomas
 - arquivo `.csv` com mapa de conhecimento entre sintomas e diagnosticos
 - codigo Python para leitura das frases, extracao de sintomas e sugestao de diagnostico
