@@ -34,24 +34,23 @@ Nesta etapa, a proposta e simular um modulo inteligente de apoio ao diagnostico 
 
 O trabalho foi desenvolvido com base:
 
-- nas apostilas da FIAP disponiveis em `docs/apostilas_aulas/`;
 - no arquivo `docs/sintomas_e_remomendacoes_cardio`;
 - no arquivo `docs/taxa_sobrevivencia_taxa_reinter`;
-- na continuidade conceitual do projeto CardioIA iniciado na Fase 1.
+- na continuidade conceitual do dataset e do contexto construidos na Fase 1.
 
-Importante: os diagnosticos sugeridos neste projeto sao **simulacoes academicas** e nao substituem avaliacao medica real.
+Importante: os diagnosticos sugeridos neste projeto são **simulacões acadêmicas** e não substituem avaliação médica real.
 
 ---
 
 ## Objetivo da Atividade
 
-Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contemplando:
+Desenvolver uma solução simples de IA aplicada a saúde cardiovascular, contemplando:
 
 - extracao de sintomas em frases clinicas;
-- associacao entre sintomas e possiveis doencas;
-- classificacao de frases em `alto risco` e `baixo risco`;
+- associação entre sintomas e possíveis doenças;
+- classificação de frases em `alto risco` e `baixo risco`;
 - uso de `TF-IDF` e modelo supervisionado com `scikit-learn`;
-- reflexao sobre vies, governanca de dados e uso responsavel de IA em saude.
+- reflexão sobre viés, governança de dados e uso responsável de IA em saúde.
 
 ---
 
@@ -64,7 +63,6 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 |   |-- frases_sintomas_pacientes.txt
 |   `-- mapa_conhecimento_sintomas_doencas.csv
 |-- docs
-|   |-- apostilas_aulas/
 |   |-- sintomas_e_remomendacoes_cardio
 |   `-- taxa_sobrevivencia_taxa_reinter
 |-- notebooks
@@ -78,9 +76,9 @@ Desenvolver uma solucao simples de IA aplicada a saude cardiovascular, contempla
 
 ---
 
-## Parte 1 - Extracao de Informacoes e Diagnostico Assistido
+## Parte 1 - Extracao de Informações e Diagnóstico Assistido
 
-### Entregaveis
+### Entregáveis
 
 - `data/frases_sintomas_pacientes.txt`
 - `data/mapa_conhecimento_sintomas_doencas.csv`
@@ -170,24 +168,6 @@ Os textos `docs/sintomas_e_remomendacoes_cardio` e `docs/taxa_sobrevivencia_taxa
 - mortalidade e readmissao;
 - contexto clinico e epidemiologico.
 
-### Base conceitual das apostilas
-
-As apostilas da FIAP apoiaram principalmente os topicos de:
-
-- NLP e classificacao de texto;
-- estruturacao de dados para IA;
-- etica, governanca e responsabilidade no uso de modelos.
-
-### Observacao sobre o dataset da Fase 1
-
-O enunciado sugere reaproveitar o dataset da Fase 1 para manter coerencia do projeto. Nesta entrega da Fase 2, ele foi considerado apenas como contexto do CardioIA, enquanto a implementacao pratica foi concentrada nos dados textuais exigidos pelo enunciado:
-
-- frases simuladas de sintomas;
-- mapa de conhecimento em CSV;
-- base textual rotulada para classificacao de risco.
-
-Ou seja, o foco desta fase ficou no modulo de NLP e classificacao de texto.
-
 ---
 
 ## Governanca de Dados e Vies
@@ -213,12 +193,6 @@ Os textos-base indicam que fatores como idade avancada e hipertensao estao assoc
 - `numpy`
 - `scikit-learn`
 - `jupyter` para executar os notebooks
-
-Instalacao rapida:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### Comandos principais
 
@@ -267,32 +241,9 @@ Esses resultados indicam que o modelo consegue diferenciar frases com sinais cli
 
 O enunciado exige um video de ate 4 minutos demonstrando a solucao completa.
 
-Para facilitar a gravacao, foi incluido um roteiro em:
-
-- `docs/roteiro_video_fase2.md`
-
 Inserir aqui o link do video no YouTube como **nao listado**:
 
 - Link: `ADICIONAR_LINK_DO_VIDEO`
-
----
-
-## Checklist do Enunciado
-
-Itens atendidos neste repositorio:
-
-- arquivo `.txt` com 10 frases completas de sintomas
-- arquivo `.csv` com mapa de conhecimento entre sintomas e diagnosticos
-- codigo Python para leitura das frases, extracao de sintomas e sugestao de diagnostico
-- arquivo `.csv` com frases e rotulos de risco
-- notebook `.ipynb` para a classificacao com TF-IDF
-- documentacao principal no `README.md`
-
-Itens que dependem da equipe fora deste workspace:
-
-- publicar o repositorio no GitHub
-- gravar o video e subir no YouTube como nao listado
-- substituir `ADICIONAR_LINK_DO_VIDEO` pelo link final
 
 ---
 
