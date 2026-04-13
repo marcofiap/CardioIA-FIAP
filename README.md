@@ -34,7 +34,6 @@ Nesta etapa, a proposta é simular um módulo inteligente de apoio ao diagnósti
 
 O trabalho foi desenvolvido com base:
 
-- nas apostilas da FIAP disponíveis em `docs/apostilas_aulas/`;
 - no arquivo `docs/sintomas_e_remomendacoes_cardio`;
 - no arquivo `docs/taxa_sobrevivencia_taxa_reinter`;
 - no dataset `data/heart_disease_uci_fiap(in).csv`, reaproveitado da Fase 1.
@@ -99,7 +98,6 @@ Desenvolver uma solução simples de IA aplicada à saúde cardiovascular, conte
 |   |-- mapeamento_dataset_texto.csv
 |   `-- mapa_conhecimento_sintomas_doencas.csv
 |-- docs
-|   |-- apostilas_aulas/
 |   |-- roteiro_video_fase2.md
 |   |-- sintomas_e_remomendacoes_cardio
 |   `-- taxa_sobrevivencia_taxa_reinter
@@ -299,14 +297,6 @@ O dataset `heart_disease_uci_fiap(in).csv` foi incorporado como base clínica es
 - dados textuais simulados da Fase 2;
 - relação explícita entre indicadores do dataset e expressões textuais do módulo NLP;
 - discussão de vieses e governança em saúde.
-
-### Base conceitual das apostilas
-
-As apostilas da FIAP apoiaram principalmente os tópicos de:
-
-- NLP e classificação de texto;
-- estruturação de dados para IA;
-- ética, governança e responsabilidade no uso de modelos.
 
 ---
 
