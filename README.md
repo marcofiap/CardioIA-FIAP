@@ -403,9 +403,7 @@ Para facilitar a gravação, foi incluído um roteiro em:
 
 - `docs/roteiro_video_fase2.md`
 
-Inserir aqui o link do vídeo no YouTube como **não listado**:
-
-- Link: `ADICIONAR_LINK_DO_VIDEO`
+- Link: `https://youtu.be/TGTFm0EXzlc`
 
 ---
 
@@ -423,21 +421,6 @@ Itens atendidos neste repositório:
 - notebook `.ipynb` para a classificação com TF-IDF
 - documentação principal no `README.md`
 
-Itens que dependem da equipe fora deste workspace:
-
-- gravar o vídeo e subir no YouTube como não listado
-- substituir `ADICIONAR_LINK_DO_VIDEO` pelo link final
-
----
-
-## Relação com os Critérios de Avaliação
-
-- `Relatos e mapa de conhecimento organizados`: atendido com `frases_sintomas_pacientes.txt` e `mapa_conhecimento_sintomas_doencas.csv`
-- `Código de extração de informações funcional`: atendido com `parte1_extracao_diagnostico.py` e notebook correspondente
-- `Dataset simples criado corretamente`: atendido com `frases_rotuladas_risco.csv`
-- `Classificador treinado e testado corretamente`: atendido com `parte2_classificador_risco.py` e `parte2_classificador_risco.ipynb`
-- `Documentação clara e repositório público no GitHub com README completo`: atendido neste repositório
-- `Vídeo de demonstração no YouTube`: pendente apenas a gravação e inclusão do link final
 
 ---
 
