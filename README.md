@@ -98,7 +98,6 @@ Desenvolver uma solução simples de IA aplicada à saúde cardiovascular, conte
 |   |-- mapeamento_dataset_texto.csv
 |   `-- mapa_conhecimento_sintomas_doencas.csv
 |-- docs
-|   |-- roteiro_video_fase2.md
 |   |-- sintomas_e_remomendacoes_cardio
 |   `-- taxa_sobrevivencia_taxa_reinter
 |-- frontend
@@ -398,10 +397,6 @@ Esses resultados indicam que o modelo consegue diferenciar frases com sinais cl�
 ## Entrega em Vídeo
 
 O enunciado exige um vídeo de até 4 minutos demonstrando a solução completa.
-
-Para facilitar a gravação, foi incluído um roteiro em:
-
-- `docs/roteiro_video_fase2.md`
 
 - Link: `https://youtu.be/TGTFm0EXzlc`
 
