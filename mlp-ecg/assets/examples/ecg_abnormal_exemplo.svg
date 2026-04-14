@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <rect width="900" height="300" fill="#fff6f3"/>
+  <path d="M0 150 L58 150 L76 138 L94 166 L112 105 L126 214 L146 128 L168 150 L228 150 L248 175 L264 120 L282 188 L300 96 L316 230 L338 148 L396 150 L418 136 L434 155 L448 82 L462 235 L484 118 L508 160 L566 150 L588 180 L602 110 L622 202 L640 72 L656 228 L680 124 L738 150 L760 184 L778 124 L794 194 L814 84 L830 240 L852 128 L900 150" fill="none" stroke="#b23a48" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="28" y="42" font-family="Arial, sans-serif" font-size="24" fill="#8c2f39">ECG de exemplo - padrao anormal</text>
+</svg>
