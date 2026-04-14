@@ -14,7 +14,7 @@
 
 ## Equipe
 
-### Grupo 3
+### Grupo 57
 
 | Integrante | GitHub |
 |---|---|
