@@ -70,15 +70,12 @@ frontend/
 
 ---
 
-## Conceitos aplicados (apostilas)
+## Conceitos aprendidos aplicados 
 
-### Fase 1 – Cap 05: Frontend Mágico
 - Componentização e reuso de componentes React
 - Hooks básicos: `useState`, `useEffect`
 - Consumo de APIs com `fetch`
 - Estilização responsiva com CSS
-
-### Fase 2 – Cap 05: Interfaces Inteligentes com React e JWT
 - **Context API** com `createContext` / `useContext` / `useReducer`
 - **Autenticação simulada** com token JWT (Base64) no localStorage
 - **Proteção de rotas** via componente `ProtectedRoute`
