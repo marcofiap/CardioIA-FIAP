@@ -165,6 +165,8 @@ Para este módulo, foi adotado o dataset recomendado no enunciado:
 
 Como essa base é distribuída em sinais de ECG em formato `CSV`, o notebook do `Ir Além 2` converte os sinais em imagens em tons de cinza durante o pré-processamento para sustentar a proposta de diagnóstico visual.
 
+### Link do vídeo Ir Além 2: https://youtu.be/MzbrTKT6os4
+
 ---
 
 ## Integração com o Dataset da Fase 1
