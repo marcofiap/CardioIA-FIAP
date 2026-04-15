@@ -64,13 +64,20 @@ Assim, o projeto atende ao enunciado ao combinar:
 Este repositório foi preparado para concentrar a atividade principal da Fase 2 e também os dois módulos `Ir Além` no mesmo projeto.
 
 - `data/`, `src/` e `notebooks/`: atividade principal da Fase 2
-- `frontend/`: estrutura reservada para o Ir Além 1
-- `mlp-ecg/`: estrutura reservada para o Ir Além 2
+- `frontend/`: módulo do **Ir Além 1**
+- `mlp-ecg/`: módulo do **Ir Além 2**
 
 Documentações complementares:
 
-- `frontend/README.md`: orientações específicas do Ir Além 1
-- `mlp-ecg/README.md`: orientações específicas do Ir Além 2
+- `frontend/README.md`: documentação específica do **Ir Além 1**
+- `mlp-ecg/README.md`: documentação específica do **Ir Além 2**
+
+### Módulos extras
+
+- **Ir Além 1**: está na pasta `frontend/`
+  - README do módulo: `frontend/README.md`
+- **Ir Além 2**: está na pasta `mlp-ecg/`
+  - README do módulo: `mlp-ecg/README.md`
 
 ---
 

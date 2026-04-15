@@ -44,7 +44,8 @@ Observacao:
 
 - os arquivos de dados nao foram versionados no Git por causa do tamanho;
 - a pasta `mlp-ecg/data/heartbeat/` esta no `.gitignore`;
-- basta baixar o dataset no Kaggle e copiar os dois arquivos acima para essa pasta local.
+- basta baixar o dataset no Kaggle e copiar os dois arquivos acima para essa pasta local;
+- o notebook foi preparado para usar caminhos relativos ao repositorio, desde que os arquivos estejam exatamente nessa pasta.
 
 ## Download no Windows
 
@@ -101,6 +102,11 @@ Abra o notebook:
 jupyter notebook mlp-ecg/notebooks/ir_alem_2_mlp_ecg.ipynb
 ```
 
+Observacao importante:
+
+- antes de executar, confirme que os arquivos `ptbdb_normal.csv` e `ptbdb_abnormal.csv` estao em `mlp-ecg/data/heartbeat/`;
+- se os arquivos nao estiverem nessa pasta, o notebook interrompe a execucao com uma mensagem indicando o caminho esperado.
+
 ## Resultado Esperado
 
 Ao executar o notebook com os arquivos do dataset na pasta indicada, voce tera:
@@ -131,4 +137,4 @@ Essas imagens servem para documentar visualmente o tipo de padrao trabalhado no 
 
 Adicionar no README principal ou neste modulo o link do video no YouTube como `nao listado`:
 
-- Link: `ADICIONAR_LINK_DO_VIDEO`
+- Link: `https://www.youtube.com/watch?v=MzbrTKT6os4`
